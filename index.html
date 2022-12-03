@@ -28,16 +28,25 @@
           <li>A <i>link</i> element creates a connection to an external file.</li>
           <li>The <i>rel</i> attribute specifies the relationship between the current document and linked document resource.</li>
           <li>The <i>href</i> attribute specifies the location (URL) of the external resource using a relative path.</li>
+          <li>Escaping HTML characters in a string means replacing the:
+            <ul>
+              <li>less than symbol (<) with &amplt;</li>
+              <li>greater than symbol (>) with &ampgt;</li>
+              <li>double quotes (") with &ampquot;</li>
+              <li>single quote (') with &amp#39;</li>
+              <li>ampersand (&) with &ampamp;</li>
+          </ul>
+          </li>
         </ul>
       </section>
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>A <i>margin</i> indicates how much space we want around the outside of an element.</li>
-          <li>A <i>padding</i> indicates how much space we want around the content inside an element.</li>
+          <li><i>margin</i> indicates how much space we want around the outside of an element.</li>
+          <li><i>padding</i> indicates how much space we want around the content inside an element.</li>
           <li><i>id</i> and <i>class</i> attributes allow CSS rules to be applied to groups of elements.</li>
-          <li>a <i>.class</i> selector points to all elements with the value specified</li>
+          <li>A <i>.class</i> selector points to all elements that have the class attribute specified.</li>
         </ul>
       </section>
 
@@ -45,8 +54,13 @@
         <h2>Git</h2>
         <ul>
           <li><i>git status</i>: checks what branch we are currently in.</li>
-          <li>git <i>checkout -b branch-name</i>: creates a new branch and switches to it.</li>
-          <li>use <i>git rebase main</i> to merge the MAIN branch into the feature branch.</li>
+          <li><i>git checkout -b branch-name</i>: creates a new branch and switches to it.</li>
+          <li><i>git rebase main</i>: merges the MAIN branch into the feature branch.</li>
+          <li><i>git add -A</i>: stages changes.</li>
+          <li><i>git commit -m '"<your message here>"'</i>: commits changes.</li>
+          <li><i>git pull origin main</i>: is used to pull in the base branch to the feature branch.</li>
+          <li><i>git push origin feature '<my feature branch>'</i> is used to push up your changes to the
+            remote repository.</li>
         </ul>
       </section>
 
@@ -73,4 +87,4 @@
     </footer>
     <script src="./assets/script.js"></script>
   </body>
-</html
+</html>
